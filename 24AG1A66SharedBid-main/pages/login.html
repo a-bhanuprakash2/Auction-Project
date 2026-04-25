@@ -1,0 +1,30 @@
+
+<div class="auth-page">
+  <div class="form-container">
+    <h1 class="form-title">Login to SharedBid</h1>
+    
+    <div class="auth-toggle">
+      <button class="auth-toggle-btn active" data-role="bidder">Bidder</button>
+      <button class="auth-toggle-btn" data-role="seller">Seller</button>
+    </div>
+    
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-input" type="password" id="password" placeholder="Enter your password" required>
+        <input type="hidden" id="role" value="bidder">
+      </div>
+      
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+    
+    <div class="login-options">
+      <p>Don't have an account? <a href="#/register">Register</a></p>
+    </div>
+  </div>
+</div>
